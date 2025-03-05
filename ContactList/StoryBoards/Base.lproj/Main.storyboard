@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Persons List-->
+        <!--Person List-->
         <scene sceneID="j1D-v5-BaY">
             <objects>
-                <tableViewController id="HCp-a9-vSk" customClass="ContactsListViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Person List" id="HCp-a9-vSk" customClass="ContactsListViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="00q-K4-S86">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,11 +34,42 @@
                             <outlet property="delegate" destination="HCp-a9-vSk" id="Ezb-jJ-9qR"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="FirstList" image="list.bullet.clipboard" catalog="system" id="G2w-ix-frM"/>
                     <navigationItem key="navigationItem" title="Persons List" id="0P0-Bx-ajM"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HiM-ec-sIN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="93" y="-174"/>
+            <point key="canvasLocation" x="1077" y="-235"/>
+        </scene>
+        <!--Person List-->
+        <scene sceneID="vXd-kK-S9n">
+            <objects>
+                <tableViewController title="Person List" id="TTe-WN-002" customClass="ContactListSectionViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Bt4-Oj-Rq1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="personCellSection" id="fVk-th-KvL">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fVk-th-KvL" id="Av8-0b-yd4">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="TTe-WN-002" id="Arv-F0-4WU"/>
+                            <outlet property="delegate" destination="TTe-WN-002" id="H3a-Gr-Jfk"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="SecondList" image="list.dash" catalog="system" id="akt-mF-3X5"/>
+                    <navigationItem key="navigationItem" title="Person List" id="t4j-KQ-T2b"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iPl-UZ-sOc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1129" y="526"/>
         </scene>
         <!--Person name-->
         <scene sceneID="8E7-U0-ZZn">
@@ -106,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h7y-Wj-8Rv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="881.67938931297704" y="-175.35211267605635"/>
+            <point key="canvasLocation" x="1933.5877862595419" y="-270.42253521126764"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="G6O-20-ppi">
@@ -117,15 +148,37 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="HCp-a9-vSk" kind="relationship" relationship="rootViewController" id="tv3-NO-XFy"/>
+                        <segue destination="C06-hi-7Sv" kind="relationship" relationship="rootViewController" id="tv3-NO-XFy"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sZg-X6-4Tz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-816" y="-174"/>
+            <point key="canvasLocation" x="-789" y="112"/>
+        </scene>
+        <!--Tab Bar View Controller Table View Controller-->
+        <scene sceneID="n9W-Uf-tH1">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="C06-hi-7Sv" customClass="TabBarViewControllerTableViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="dQy-3G-Z0b"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hgi-2e-V9v">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="HCp-a9-vSk" kind="relationship" relationship="viewControllers" id="n32-av-CIH"/>
+                        <segue destination="TTe-WN-002" kind="relationship" relationship="viewControllers" id="0T3-2y-OQP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="20e-OV-dHA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="201" y="112"/>
         </scene>
     </scenes>
     <resources>
+        <image name="list.bullet.clipboard" catalog="system" width="98" height="128"/>
+        <image name="list.dash" catalog="system" width="128" height="85"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

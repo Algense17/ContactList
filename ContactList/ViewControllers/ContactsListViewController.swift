@@ -9,7 +9,7 @@ import UIKit
 
 final class ContactsListViewController: UITableViewController {
     
-    private var persons = Person.getContactList()
+    var persons: [Person]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +20,7 @@ final class ContactsListViewController: UITableViewController {
         let backButton = UIBarButtonItem()
         backButton.title = "Back"
         self.navigationItem.backBarButtonItem = backButton
+
     }
     // Настройка сигвея
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -45,6 +46,7 @@ extension ContactsListViewController {
         
         cell.contentConfiguration = content
         return cell
+        
     }
     
 }

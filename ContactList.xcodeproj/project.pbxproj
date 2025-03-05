@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		FF88059C2D77822A00FC0735 /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ContactList.app; path = "/Users/vasiliy/Desktop/SwiftBookLessons/Part 3/Lesson 3.02/ContactList/build/Debug-iphoneos/ContactList.app"; sourceTree = "<absolute>"; };
+		FF8805D62D78313C00FC0735 /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -46,6 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				FF88059E2D77822A00FC0735 /* ContactList */,
+				FF8805D62D78313C00FC0735 /* ContactList.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,7 +72,7 @@
 			packageProductDependencies = (
 			);
 			productName = ContactList;
-			productReference = FF88059C2D77822A00FC0735 /* ContactList.app */;
+			productReference = FF8805D62D78313C00FC0735 /* ContactList.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
