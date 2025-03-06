@@ -13,8 +13,6 @@ struct Person {
     let surname: String
     let email: String
     let phone: String
-    let phoneImg = "phone"
-    let emailImg = "email"
     
     var fullName: String {
         "\(name) \(surname)"

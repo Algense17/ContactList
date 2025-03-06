@@ -155,10 +155,10 @@
             </objects>
             <point key="canvasLocation" x="-789" y="112"/>
         </scene>
-        <!--Tab Bar View Controller Table View Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="n9W-Uf-tH1">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="C06-hi-7Sv" customClass="TabBarViewControllerTableViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="C06-hi-7Sv" customClass="TabBarViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="dQy-3G-Z0b"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hgi-2e-V9v">

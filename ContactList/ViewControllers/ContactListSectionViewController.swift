@@ -14,15 +14,12 @@ final class ContactListSectionViewController: UITableViewController {
 }
 // MARK: - UITableViewDataSource
 extension ContactListSectionViewController {
-    // Устанавливаем кол-во секций
     override func numberOfSections(in tableView: UITableView) -> Int {
         persons.count
     }
-    // Устанавливает кол-во строк
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         2
     }
-    // Заголовок у каждой секции
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         persons[section].fullName
     }
@@ -35,13 +32,11 @@ extension ContactListSectionViewController {
         
         switch indexPath.row {
         case 0:
-            content.image = UIImage(named: person.emailImg)
+            content.image = UIImage(systemName: "phone")
             content.text = "\(person.email)"
-        case 1:
-            content.image = UIImage(named: person.phoneImg)
-            content.text = "\(person.phone)"
         default:
-            content.text = ""
+            content.image = UIImage(systemName: "envelope")
+            content.text = "\(person.phone)"
         }
         
         cell.contentConfiguration = content

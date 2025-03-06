@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class TabBarViewControllerTableViewController: UITabBarController {
+final class TabBarViewController: UITabBarController {
     
     private var persons = Person.getContactList()
     
