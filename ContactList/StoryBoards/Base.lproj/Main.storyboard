@@ -155,12 +155,12 @@
             </objects>
             <point key="canvasLocation" x="-789" y="112"/>
         </scene>
-        <!--Tab Bar View Controller-->
+        <!--Person List-->
         <scene sceneID="n9W-Uf-tH1">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="C06-hi-7Sv" customClass="TabBarViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController title="Person List" automaticallyAdjustsScrollViewInsets="NO" id="C06-hi-7Sv" customClass="TabBarViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="dQy-3G-Z0b"/>
+                    <navigationItem key="navigationItem" title="Person List" id="dQy-3G-Z0b"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hgi-2e-V9v">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
